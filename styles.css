@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--DarkGrayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+--verygrayish-blue:hsl(201,15%,95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,h1,h2,h3,p{
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    margin: 1rem;
+}
+h2,h3{
+    color: var(--DarkGrayish-Blue);
+}
+p{
+    color:var(--Grayish-Blue);
+    
+}
+
+.clipboard-card{
+    max-width: 90rem;
+    justify-content: center;
+    align-content:center;
+}
+
+.clipboard-card>*{
+    padding: 2rem;
+}
+
+.background-header{
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clipboard-container{
+    margin-top: -10rem;
+}
+.clipboard-container p{
+    align-self: center;
+}
+
+
+button{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color:var(--verygrayish-blue);
+    border-style: none;
+    font-size:medium;
+    margin-top: 1.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem var(--verygrayish-blue);
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+.green-btn{
+    background-color: var(--Strong-Cyan); 
+}
+
+.blue-btn{
+    background-color: var(--Light-Blue);
+}
+
+.computer-detailed-container{
+    display: flex;
+}
+
+.computer-detailed-container img{
+    margin-left: -6rem;
+}
+
+.computer-text{
+    margin: 4rem;
+}
+
+.detailed-explanation-container{
+    display: flex;
+    text-align: center;
+}
+.detailed-explanation-container img{
+    margin-bottom: 1rem;
+}
+.detailed-explanation-container h3{
+    margin: 1rem;
+}
+
+.detailed-explanation-container h3{
+    margin-bottom: 1rem;
+}
+
+.tech-giants-container{
+    display: flex;   
+}
+
+.logo{
+    margin: 3rem;
+}
+
+.footer-container{
+    background-color: var(--verygrayish-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color:var(--Grayish-Blue);
+    margin: 1.5rem;
+}
+
+.footer-icons a{
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    
+}
+
+.contact-active:hover{
+    color:var(--Strong-Cyan);
+}
+
+.device-container{
+    justify-content: center;
+}
+
+.download-history-container{
+    margin-bottom: 4rem;
+}
+
+
+
+@media(max-width:35em){
+    button{
+        display:block;
+        width:95%;
+        padding: 0.5rem;
+        font-size: larger;
+    }
+    .clipboard-card>*{
+        padding: 3rem;
+    }
+
+    .computer-detailed-container{
+        display: block;
+    }
+    .computer-detailed-container img{
+        width:100%;
+        margin-right: -6rem;
+    }
+
+    .devices-container img{
+        width:100%;
+    }
+
+    .detailed-explanation-container{
+        display: block;
+    }
+
+    .tech-giants-container{
+        display: block;
+    }
+
+    .footer-container{
+        display: block;
+    }
+    li{
+        float: none;
+    }
+   
+}
+
